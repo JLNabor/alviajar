@@ -1,0 +1,19 @@
+<app-search-box></app-search-box>
+<div class="main-alviajar">
+<div class="title family-montserrat weight-bold size-30 color-DCDBDB">Mis Ofertas</div>
+<div class="alviajar">
+  <div class="item" *ngFor="let item of alViajarInfo">
+    <div class="promotion-img">
+        <img class="alviajar-img" src="../../../assets/img/alviajar/{{item.imgName}}"/>
+    </div>
+    <div class="promotion-text"> 
+        <div class="promotion-text "> 
+          <p class="family-montserrat weight-bold size-15">
+            {{item.Description}}
+          </p>     
+    </div>
+  </div>
+</div>
+</div>
+</div>
+

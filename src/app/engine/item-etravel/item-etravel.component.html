@@ -1,0 +1,16 @@
+<div class="main-item-etravel">
+  <div class="title family-montserrat weight-bold size-30 color-DCDBDB">{{titleItem}}</div>
+  <div class="alviajar">
+    <div class="item" *ngFor="let item of items">
+      <div class="promotion-img">
+        <a href="{{item.urlEtravel}}">
+          <img class="alviajar-img" src="../../../assets/img/etravel/{{item.imgName}} "  />
+        </a>
+      </div>
+      <div class="promotion-text family-montserrat weight-bold size-20 color-DCDBDB" [ngClass]="{'back-orange': item.type == eTravelType.Destination, 'back-green': item.type == eTravelType.Hotel, 'back-red': item.type == eTravelType.Tour, 'back-gray': item.type == eTravelType.Car, 'back-black': item.type == eTravelType.Shuttle }"> 
+              {{item.Name}}
+  
+    </div>
+  </div>
+  </div>
+  </div>
